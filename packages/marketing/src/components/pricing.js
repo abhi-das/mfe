@@ -5,7 +5,7 @@ export default () => {
     return (<div>
         Hi Pricing!
         <Link to="/">
-            <button>Home</button>
+            <button>Back to Home</button>
         </Link>
     </div>)
 }
