@@ -16,7 +16,7 @@ const mount = (el, { defaultHistory, onNavigate, initialPath }) => {
     return {
         onParentNavigation: ({ pathname: nextPathname }) => {
             const { pathname }= history.location;
-            // console.log(pathname,'==onParent==', nextPathname)
+            console.log(pathname,'==onParent==', nextPathname)
             if(pathname !== nextPathname) {
                 history.push(nextPathname)
             }
@@ -25,7 +25,7 @@ const mount = (el, { defaultHistory, onNavigate, initialPath }) => {
 }
 
 if(process.env.NODE_ENV === 'development') {
-    const el = document.querySelector('#mr-dev-root');
+    const el = document.querySelector('#auth-dev-root');
     if(el) {
         mount(el, { defaultHistory: createBrowserHistory() });
     }

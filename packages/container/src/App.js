@@ -1,13 +1,17 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Header from './components/Header';
 import MarketingApp from './components/MarketingApp';
+import AuthApp from './components/AuthApp';
 
 export default () => {
     return <>
         <BrowserRouter>
             <Header />
-            <MarketingApp />
+            <Switch>
+                <Route path='/auth' component={AuthApp} />
+                <Route path='/' component={MarketingApp} />
+            </Switch>
         </BrowserRouter>
     </>
 };

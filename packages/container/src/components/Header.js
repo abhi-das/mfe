@@ -7,8 +7,9 @@ const Header = () => {
             <Link to='/'>
                 <h2>App</h2>
             </Link>
-            <button>Login</button>
-            <button>Logout</button>
+            <Link to='/auth/signin'>
+                <button>Login</button>
+            </Link>
         </div>
     </>
 }
