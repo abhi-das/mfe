@@ -1,0 +1,7 @@
+@import "../styles/common";
+
+.la-container {
+    box-sizing: content-box;
+    @include spacing;
+    border: 1px solid $orange;
+}

@@ -1,0 +1,7 @@
+@import "../styles/common";
+
+.pr-container {
+    box-sizing: content-box;
+    @include spacing;
+    border: 1px solid $blue;
+}

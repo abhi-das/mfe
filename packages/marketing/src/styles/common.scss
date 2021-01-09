@@ -1,0 +1,8 @@
+
+$spacing: 1em;
+$orange: orange;
+$blue: blue;
+
+@mixin spacing {
+    padding: $spacing;
+}
