@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default () => {
     return (<div>
-        <h4>SignUp Page!</h4>
+        <h4>SignUp!</h4>
         <hr />
         <Link to='/auth/signin'>
             <button>Go to SignIn</button>
